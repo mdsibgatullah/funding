@@ -1,0 +1,53 @@
+{% load static %}
+
+<section class="video-section pt-60">
+    <div class="container">
+      <div class="video-bg-img">
+        <div class="row position-relative">
+          <div class="col-md-8">
+            <h2 class="fs-6 fw-6 text-primary">Life Changing Video</h2>
+            <h3 class="fs-2 fw-6 mb-0 text-white">
+              Joel Orphanage Of Ministry Uganda
+            </h3>
+          </div>
+            <div class="col-md-4 mt-3 mt-md-0">
+              <div class="video-play-btn m-lg-auto ms-md-auto">
+              <button
+                type="button"
+                class="play-video popup-video fs-4 border-0"
+                data-bs-toggle="modal"
+                data-bs-target="#exampleModal4"
+              >
+                <i class="fas fa-play text-primary"></i>
+              </button>
+            </div>
+            <!-- Modal -->
+            <div class="modal fade" id="exampleModal4" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <button
+                      type="button"
+                      class="btn-close text-white"
+                      data-bs-dismiss="modal"
+                      aria-label="Close"
+                    ></button>
+                  </div>
+                  <div class="modal-body w-100">
+                    <iframe
+                      src="https://www.youtube.com/embed/QvkDDA62-tw"
+                      class="w-100 h-100"
+                      title="YouTube video player"
+                      frameborder="0"
+                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                      allowfullscreen
+                    ></iframe>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>

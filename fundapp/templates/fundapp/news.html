@@ -1,0 +1,584 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+   <head>
+      {% include "fundapp/css.html" %}
+   </head>
+   <body class="body-wrapper">
+      <!-- start header section -->
+      {% include "fundapp/header.html" %}
+      <div class="news-page">
+         <!-- start hero-section -->
+         <section class="hero-section">
+            <div class="inner-bgimg  position-relative"
+               style="background: url('{% static 'fundapp/allImage/annie-spratt-OIuCXxx08yg-unsplash.jpg' %}');">
+               <div class="container">
+                  <div class="row ">
+                     <div class="col-lg-6 col-md-7 parallelogram-shape">
+                        <div class="text-white inner-text position-relative">
+                           <p class="fs-18 fw-5 mb-md-3 pb-lg-2 mb-2">Our Mission : Food, Education, Medicine</p>
+                           <h2 class="fs-1 mb-md-0 fw-6">News Feeds</h2>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </section>
+         <!-- end hero-section -->
+         <!-- start news-section -->
+         <div class="news-section ">
+            <div class="container">
+               <div class="row">
+                  <div class="col-xl-8">
+                     <!-- start news-left-section -->
+                     <div class="news-left-section pt-60">
+                        <div wire:id="24eckh3XFEY4rcucHhLJ" wire:initial-data="{&quot;fingerprint&quot;:{&quot;id&quot;:&quot;24eckh3XFEY4rcucHhLJ&quot;,&quot;name&quot;:&quot;show-news&quot;,&quot;locale&quot;:&quot;en&quot;,&quot;path&quot;:&quot;news&quot;,&quot;method&quot;:&quot;GET&quot;,&quot;v&quot;:&quot;acj&quot;},&quot;effects&quot;:{&quot;listeners&quot;:[&quot;changeFilter&quot;,&quot;resetFilter&quot;],&quot;path&quot;:&quot;https:\/\/crowdfunding.infyom.com\/news&quot;},&quot;serverMemo&quot;:{&quot;children&quot;:[],&quot;errors&quot;:[],&quot;htmlHash&quot;:&quot;6606d62d&quot;,&quot;data&quot;:{&quot;newsCategory&quot;:&quot;&quot;,&quot;newsTags&quot;:&quot;&quot;,&quot;searchByNewsNameDesc&quot;:&quot;&quot;,&quot;page&quot;:1,&quot;paginators&quot;:{&quot;page&quot;:1}},&quot;dataMeta&quot;:[],&quot;checksum&quot;:&quot;2d6ae230f4945d1f09f54338fde9c3ea173ff7ac80d3f7d31287389dfc18d96a&quot;}}" class="row">
+                           <div class="col-12 news-card mb-20">
+                              <div class="card">
+                                 <div class="positon-relative">
+                                    <div class="card-img rounded-10">
+                                       <a href="save-the-childr.html">
+                                       <img src="{% static 'fundapp/allImage/annie-spratt-OIuCXxx08yg-unsplash.jpg' %}"
+                                          class="w-100 h-100 card-img-top object-fit-cover rounded-10 news-card-image"
+                                          alt="card">
+                                       </a>
+                                    </div>
+                                    <span class="badge small-btn">Charity</span>
+                                 </div>
+                                 <div class="card-body pt-0">
+                                    <h4 class="card-title text-dark fw-6 fs-20 pb-1">
+                                       <a class="text-dark"
+                                          href="save-the-childr.html">Save the Children Role in Fight Against Malnutrition Hailed</a>
+                                    </h4>
+                                    <p class="fs-14 mb-2">
+                                       Your contribution has the power to uplift children in dire situations. We’re working towards a nation where its children live a secure life, full of opportunities for growth and development
+                                    </p>
+                                    <div class="d-flex flex-wrap justify-content-between align-items-center">
+                                       <div class="d-flex">
+                                          <div class="admin-post me-2">
+                                             <img src="{% static 'fundapp/allImage/annie-spratt-OIuCXxx08yg-unsplash.jpg' %}"
+                                                class="w-100 h-100 object-fit-cover rounded-20">
+                                          </div>
+                                          <span class="fs-14 fw-5 text-dark my-auto">Super Admin</span>
+                                       </div>
+                                       <div class="d-flex ml-auto">
+                                          <div class="mx-2 my-2 ps-1">
+                                             <i class="fa-solid fa-message text-primary"></i>
+                                             <span
+                                                class="fs-14 fw-5 text-primary">5 Comments</span>
+                                          </div>
+                                          <div class="my-2">
+                                             <i class="fa-solid fa-calendar text-primary"></i>
+                                             <span
+                                                class="fs-14 fw-5 text-primary">3rd October 2022</span>
+                                          </div>
+                                       </div>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="col-12 news-card mb-20">
+                              <div class="card">
+                                 <div class="positon-relative">
+                                    <div class="card-img rounded-10">
+                                       <a href="save-the-childr.html">
+                                       <img src="{% static 'fundapp/allImage/annie-spratt-OIuCXxx08yg-unsplash.jpg' %}"
+                                          class="w-100 h-100 card-img-top object-fit-cover rounded-10 news-card-image"
+                                          alt="card">
+                                       </a>
+                                    </div>
+                                    <span class="badge small-btn">Education</span>
+                                 </div>
+                                 <div class="card-body pt-0">
+                                    <h4 class="card-title text-dark fw-6 fs-20 pb-1">
+                                       <a class="text-dark"
+                                          href="save-the-childr.html">Back to the future: Quality education through</a>
+                                    </h4>
+                                    <p class="fs-14 mb-2">
+                                       Donate For Education For One Poor Child For One Year and Help Them Secure Their Future Help A Poor Child In Completing is Education By donating In few Easy Steps
+                                    </p>
+                                    <div class="d-flex flex-wrap justify-content-between align-items-center">
+                                       <div class="d-flex">
+                                          <div class="admin-post me-2">
+                                             <img src="{% static 'fundapp/allImage/annie-spratt-OIuCXxx08yg-unsplash.jpg' %}"
+                                                class="w-100 h-100 object-fit-cover rounded-20">
+                                          </div>
+                                          <span class="fs-14 fw-5 text-dark my-auto">Super Admin</span>
+                                       </div>
+                                       <div class="d-flex ml-auto">
+                                          <div class="mx-2 my-2 ps-1">
+                                             <i class="fa-solid fa-message text-primary"></i>
+                                             <span
+                                                class="fs-14 fw-5 text-primary">0 Comments</span>
+                                          </div>
+                                          <div class="my-2">
+                                             <i class="fa-solid fa-calendar text-primary"></i>
+                                             <span
+                                                class="fs-14 fw-5 text-primary">3rd October 2022</span>
+                                          </div>
+                                       </div>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="col-12 news-card mb-20">
+                              <div class="card">
+                                 <div class="positon-relative">
+                                    <div class="card-img rounded-10">
+                                       <a href="save-the-childr.html">
+                                       <img src="{% static 'fundapp/allImage/annie-spratt-OIuCXxx08yg-unsplash.jpg' %}"
+                                          class="w-100 h-100 card-img-top object-fit-cover rounded-10 news-card-image"
+                                          alt="card">
+                                       </a>
+                                    </div>
+                                    <span class="badge small-btn">Charity</span>
+                                 </div>
+                                 <div class="card-body pt-0">
+                                    <h4 class="card-title text-dark fw-6 fs-20 pb-1">
+                                       <a class="text-dark"
+                                          href="save-the-childr.html">Take Care Of The Elderly Without Home</a>
+                                    </h4>
+                                    <p class="fs-14 mb-2">
+                                       Malnutrition is a condition that results from eating a diet lacking in nutrients and Malnutrition in children is especially harmful
+                                    </p>
+                                    <div class="d-flex flex-wrap justify-content-between align-items-center">
+                                       <div class="d-flex">
+                                          <div class="admin-post me-2">
+                                             <img src="{% static 'fundapp/allImage/annie-spratt-OIuCXxx08yg-unsplash.jpg' %}"
+                                                class="w-100 h-100 object-fit-cover rounded-20">
+                                          </div>
+                                          <span class="fs-14 fw-5 text-dark my-auto">Super Admin</span>
+                                       </div>
+                                       <div class="d-flex ml-auto">
+                                          <div class="mx-2 my-2 ps-1">
+                                             <i class="fa-solid fa-message text-primary"></i>
+                                             <span
+                                                class="fs-14 fw-5 text-primary">0 Comments</span>
+                                          </div>
+                                          <div class="my-2">
+                                             <i class="fa-solid fa-calendar text-primary"></i>
+                                             <span
+                                                class="fs-14 fw-5 text-primary">3rd October 2022</span>
+                                          </div>
+                                       </div>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="col-12 news-card mb-20">
+                              <div class="card">
+                                 <div class="positon-relative">
+                                    <div class="card-img rounded-10">
+                                       <a href="save-the-childr.html">
+                                       <img src="{% static 'fundapp/allImage/annie-spratt-OIuCXxx08yg-unsplash.jpg' %}"
+                                          class="w-100 h-100 card-img-top object-fit-cover rounded-10 news-card-image"
+                                          alt="card">
+                                       </a>
+                                    </div>
+                                    <span class="badge small-btn">Food</span>
+                                 </div>
+                                 <div class="card-body pt-0">
+                                    <h4 class="card-title text-dark fw-6 fs-20 pb-1">
+                                       <a class="text-dark"
+                                          href="save-the-childr.html">5 Food Combinations That Can Help With Better Absorption Of Nutrients</a>
+                                    </h4>
+                                    <p class="fs-14 mb-2">
+                                       According to award-winning nutritionist Lovneet Batra, there are certain food combinations that help with better absorption of nutrients.We all have heard how important it is to have nutritious food. It keeps your health in check and helps you gain a good amount of all the essential nutrients. Because of this, many of us have started to add various ingredients to our diet. From spinach, tofu to mu...
+                                    </p>
+                                    <div class="d-flex flex-wrap justify-content-between align-items-center">
+                                       <div class="d-flex">
+                                          <div class="admin-post me-2">
+                                             <img src="{% static 'fundapp/allImage/annie-spratt-OIuCXxx08yg-unsplash.jpg' %}"
+                                                class="w-100 h-100 object-fit-cover rounded-20">
+                                          </div>
+                                          <span class="fs-14 fw-5 text-dark my-auto">Super Admin</span>
+                                       </div>
+                                       <div class="d-flex ml-auto">
+                                          <div class="mx-2 my-2 ps-1">
+                                             <i class="fa-solid fa-message text-primary"></i>
+                                             <span
+                                                class="fs-14 fw-5 text-primary">0 Comments</span>
+                                          </div>
+                                          <div class="my-2">
+                                             <i class="fa-solid fa-calendar text-primary"></i>
+                                             <span
+                                                class="fs-14 fw-5 text-primary">3rd October 2022</span>
+                                          </div>
+                                       </div>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="col-12 news-card mb-20">
+                              <div class="card">
+                                 <div class="positon-relative">
+                                    <div class="card-img rounded-10">
+                                       <a href="save-the-childr.html">
+                                       <img src="{% static 'fundapp/allImage/annie-spratt-OIuCXxx08yg-unsplash.jpg' %}"
+                                          class="w-100 h-100 card-img-top object-fit-cover rounded-10 news-card-image"
+                                          alt="card">
+                                       </a>
+                                    </div>
+                                    <span class="badge small-btn">Sports</span>
+                                 </div>
+                                 <div class="card-body pt-0">
+                                    <h4 class="card-title text-dark fw-6 fs-20 pb-1">
+                                       <a class="text-dark"
+                                          href="save-the-childr.html">Deadline Over, Women Footballers Wait For &#039;Fair Play&#039; As Government Swings Into Action</a>
+                                    </h4>
+                                    <p class="fs-14 mb-2">
+                                       The AFC Women's Club Championship starts on Saturday. The schedule says that India's matches have been cancelled, but the club from India, Gokulam Kerala FC is still hoping for a turnaround as the centre has now got involved and is negotiating with FIFA to let the girls play.Mansa echoes her sentiment and adds, \\This is not just for us but for the future generation as well. We want to gift them s...
+                                    </p>
+                                    <div class="d-flex flex-wrap justify-content-between align-items-center">
+                                       <div class="d-flex">
+                                          <div class="admin-post me-2">
+                                             <img src="{% static 'fundapp/allImage/annie-spratt-OIuCXxx08yg-unsplash.jpg' %}"
+                                                class="w-100 h-100 object-fit-cover rounded-20">
+                                          </div>
+                                          <span class="fs-14 fw-5 text-dark my-auto">Super Admin</span>
+                                       </div>
+                                       <div class="d-flex ml-auto">
+                                          <div class="mx-2 my-2 ps-1">
+                                             <i class="fa-solid fa-message text-primary"></i>
+                                             <span
+                                                class="fs-14 fw-5 text-primary">0 Comments</span>
+                                          </div>
+                                          <div class="my-2">
+                                             <i class="fa-solid fa-calendar text-primary"></i>
+                                             <span
+                                                class="fs-14 fw-5 text-primary">3rd October 2022</span>
+                                          </div>
+                                       </div>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="col-12 news-card mb-20">
+                              <div class="card">
+                                 <div class="positon-relative">
+                                    <div class="card-img rounded-10">
+                                       <a href="save-the-childr.html">
+                                       <img src="{% static 'fundapp/allImage/annie-spratt-OIuCXxx08yg-unsplash.jpg' %}"
+                                          class="w-100 h-100 card-img-top object-fit-cover rounded-10 news-card-image"
+                                          alt="card">
+                                       </a>
+                                    </div>
+                                    <span class="badge small-btn">Technology</span>
+                                 </div>
+                                 <div class="card-body pt-0">
+                                    <h4 class="card-title text-dark fw-6 fs-20 pb-1">
+                                       <a class="text-dark"
+                                          href="save-the-childr.html">How new tech will change human life?</a>
+                                    </h4>
+                                    <p class="fs-14 mb-2">
+                                       Technology is the bridge for better future. Humans have developed new technologies for his comfort. These new technologies have changed human life drastically.
+                                    </p>
+                                    <div class="d-flex flex-wrap justify-content-between align-items-center">
+                                       <div class="d-flex">
+                                          <div class="admin-post me-2">
+                                             <img src="{% static 'fundapp/allImage/annie-spratt-OIuCXxx08yg-unsplash.jpg' %}"
+                                                class="w-100 h-100 object-fit-cover rounded-20">
+                                          </div>
+                                          <span class="fs-14 fw-5 text-dark my-auto">Super Admin</span>
+                                       </div>
+                                       <div class="d-flex ml-auto">
+                                          <div class="mx-2 my-2 ps-1">
+                                             <i class="fa-solid fa-message text-primary"></i>
+                                             <span
+                                                class="fs-14 fw-5 text-primary">0 Comments</span>
+                                          </div>
+                                          <div class="my-2">
+                                             <i class="fa-solid fa-calendar text-primary"></i>
+                                             <span
+                                                class="fs-14 fw-5 text-primary">3rd October 2022</span>
+                                          </div>
+                                       </div>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="col-12 news-card mb-20">
+                              <div class="card">
+                                 <div class="positon-relative">
+                                    <div class="card-img rounded-10">
+                                       <a href="save-the-childr.html">
+                                       <img src="{% static 'fundapp/allImage/annie-spratt-OIuCXxx08yg-unsplash.jpg' %}"
+                                          class="w-100 h-100 card-img-top object-fit-cover rounded-10 news-card-image"
+                                          alt="card">
+                                       </a>
+                                    </div>
+                                    <span class="badge small-btn">Growth</span>
+                                 </div>
+                                 <div class="card-body pt-0">
+                                    <h4 class="card-title text-dark fw-6 fs-20 pb-1">
+                                       <a class="text-dark"
+                                          href="save-the-childr.html">Investment ideas for better returns</a>
+                                    </h4>
+                                    <p class="fs-14 mb-2">
+                                       Investment is the key for growth whether it is of knowledge or money. In the current market, you can save your income tax as there are various tax savers that are available.However, there are some tax savings plans like NPS, ELSS mutual funds, and Ulips that are also market-based investments but due to non-fixation of the returns, multiple investors find it as one of the causes to shun them.If an...
+                                    </p>
+                                    <div class="d-flex flex-wrap justify-content-between align-items-center">
+                                       <div class="d-flex">
+                                          <div class="admin-post me-2">
+                                             <img src="{% static 'fundapp/allImage/annie-spratt-OIuCXxx08yg-unsplash.jpg' %}"
+                                                class="w-100 h-100 object-fit-cover rounded-20">
+                                          </div>
+                                          <span class="fs-14 fw-5 text-dark my-auto">Super Admin</span>
+                                       </div>
+                                       <div class="d-flex ml-auto">
+                                          <div class="mx-2 my-2 ps-1">
+                                             <i class="fa-solid fa-message text-primary"></i>
+                                             <span
+                                                class="fs-14 fw-5 text-primary">4 Comments</span>
+                                          </div>
+                                          <div class="my-2">
+                                             <i class="fa-solid fa-calendar text-primary"></i>
+                                             <span
+                                                class="fs-14 fw-5 text-primary">3rd October 2022</span>
+                                          </div>
+                                       </div>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="row justify-content-center align-items-center mt-xl-3 pt-xl-1">
+                              <div class="col-md-6 text-center">
+                                 <nav aria-label="Page navigation example">
+                                    <ul class="pagination justify-content-center mb-5  flex-wrap">
+                                       <span class="page-item">
+                                          <div>
+                                             <nav>
+                                                <ul class="pagination">
+                                                   <li class="page-item disabled" aria-disabled="true" aria-label="&laquo; Previous">
+                                                      <span class="page-link" aria-hidden="true">&lsaquo;</span>
+                                                   </li>
+                                                   <li class="page-item active" wire:key="paginator-page-1-page-1" aria-current="page"><span class="page-link">1</span></li>
+                                                   <li class="page-item" wire:key="paginator-page-1-page-2"><button type="button" class="page-link" wire:click="gotoPage(2, 'page')">2</button></li>
+                                                   <li class="page-item">
+                                                      <button type="button" dusk="nextPage" class="page-link" wire:click="nextPage('page')" wire:loading.attr="disabled" rel="next" aria-label="Next &raquo;">&rsaquo;</button>
+                                                   </li>
+                                                </ul>
+                                             </nav>
+                                          </div>
+                                       </span>
+                                    </ul>
+                                 </nav>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="col-xl-4 pt-60 pb-100">
+                     <!-- start news-right-section -->
+                     <div class="news-right-section">
+                        <!-- start search-object-section -->
+                        <div class="search-object bg-light p-30 rounded-10 position-relative mb-20">
+                           <div class="d-flex justify-content-between align-items-center mb-4 pb-lg-1">
+                              <h5 class="fs-20 fw-6 text-dark mb-0">Search Objects</h5>
+                              <div class="rectangle-shape"></div>
+                           </div>
+                           <form action="#">
+                              <div class="d-flex">
+                                 <input type="text" placeholder="Search your keyword..."
+                                    class="fs-14 text-gray w-100" id="searchNews">
+                                 <a type="button"
+                                    class="search-icon d-flex justify-content-center align-items-center border-0 "
+                                    id="resetNewsFilter">
+                                 <i class="fa fa-times text-white d-flex justify-content-center align-items-center"></i>
+                                 </a>
+                              </div>
+                           </form>
+                        </div>
+                        <!-- end search-object-section -->
+                        <!-- start popular-feeds-section -->
+                        <div class="popular-feeds bg-light p-30 rounded-10 position-relative mb-20">
+                           <div class="d-flex justify-content-between align-items-center mb-4 pb-lg-1">
+                              <h5 class="fs-20 fw-6 text-dark mb-0">Popular Feeds</h5>
+                              <div class="rectangle-shape"></div>
+                           </div>
+                           <div class="d-flex mb-2 pb-lg-1 align-items-sm-center">
+                              <div class="feeds-post me-3 rounded-10">
+                                 <a href="save-the-childr.html">
+                                 <img src="{% static 'fundapp/allImage/annie-spratt-OIuCXxx08yg-unsplash.jpg' %}"
+                                    class="w-100 h-100 object-fit-cover rounded-10"></a>
+                              </div>
+                              <div class="feeds-text">
+                                 <p class="fs-16 fw-5 text-dark mb-1">
+                                    <a class="text-dark"
+                                       href="save-the-childr.html">esperanza test</a>
+                                 </p>
+                                 <p class="text-primary fs-14 fw-5 mb-0">26th September 2023</p>
+                              </div>
+                           </div>
+                           <div class="d-flex mb-2 pb-lg-1 align-items-sm-center">
+                              <div class="feeds-post me-3 rounded-10">
+                                 <a href="save-the-childr.html">
+                                 <img src="{% static 'fundapp/allImage/annie-spratt-OIuCXxx08yg-unsplash.jpg' %}"
+                                    class="w-100 h-100 object-fit-cover rounded-10"></a>
+                              </div>
+                              <div class="feeds-text">
+                                 <p class="fs-16 fw-5 text-dark mb-1">
+                                    <a class="text-dark"
+                                       href="save-the-childr.html">sgdhdsdsfbsdb</a>
+                                 </p>
+                                 <p class="text-primary fs-14 fw-5 mb-0">17th May 2023</p>
+                              </div>
+                           </div>
+                           <div class="d-flex mb-2 pb-lg-1 align-items-sm-center">
+                              <div class="feeds-post me-3 rounded-10">
+                                 <a href="save-the-childr.html">
+                                 <img src="{% static 'fundapp/allImage/annie-spratt-OIuCXxx08yg-unsplash.jpg' %}"
+                                    class="w-100 h-100 object-fit-cover rounded-10"></a>
+                              </div>
+                              <div class="feeds-text">
+                                 <p class="fs-16 fw-5 text-dark mb-1">
+                                    <a class="text-dark"
+                                       href="save-the-childr.html">Investment ideas for better returns</a>
+                                 </p>
+                                 <p class="text-primary fs-14 fw-5 mb-0">3rd October 2022</p>
+                              </div>
+                           </div>
+                           <div class="d-flex mb-2 pb-lg-1 align-items-sm-center">
+                              <div class="feeds-post me-3 rounded-10">
+                                 <a href="save-the-childr.html">
+                                 <img src="{% static 'fundapp/allImage/annie-spratt-OIuCXxx08yg-unsplash.jpg' %}"
+                                    class="w-100 h-100 object-fit-cover rounded-10"></a>
+                              </div>
+                              <div class="feeds-text">
+                                 <p class="fs-16 fw-5 text-dark mb-1">
+                                    <a class="text-dark"
+                                       href="save-the-childr.html">How new tech will change human life?</a>
+                                 </p>
+                                 <p class="text-primary fs-14 fw-5 mb-0">3rd October 2022</p>
+                              </div>
+                           </div>
+                        </div>
+                        <!-- end popular-feeds-section -->
+                        <!-- start categories-section -->
+                        <div class="categories-section bg-light p-30 rounded-10 position-relative mb-20">
+                           <div class="d-flex justify-content-between align-items-center mb-4 pb-lg-1">
+                              <h5 class="fs-20 fw-6 text-dark mb-0">Categories</h5>
+                              <div class="rectangle-shape"></div>
+                           </div>
+                           <a href="#!" data-id="1"
+                              class="categories d-flex align-items-center justify-content-between bg-white rounded-10 mb-2 news-category-filter
+                              ">
+                           <span data-id="1"
+                              class=" fs-16 text-dark fw-5 news-category-filter">
+                           Charity</span>
+                           <button class=" border-0">
+                           <span data-id="1"
+                              class="text-dark news-category-filter">3</span>
+                           </button>
+                           </a>
+                           <a href="#!" data-id="3"
+                              class="categories d-flex align-items-center justify-content-between bg-white rounded-10 mb-2 news-category-filter
+                              ">
+                           <span data-id="3"
+                              class=" fs-16 text-dark fw-5 news-category-filter">
+                           Food</span>
+                           <button class=" border-0">
+                           <span data-id="3"
+                              class="text-dark news-category-filter">2</span>
+                           </button>
+                           </a>
+                           <a href="#!" data-id="2"
+                              class="categories d-flex align-items-center justify-content-between bg-white rounded-10 mb-2 news-category-filter
+                              ">
+                           <span data-id="2"
+                              class=" fs-16 text-dark fw-5 news-category-filter">
+                           Education</span>
+                           <button class=" border-0">
+                           <span data-id="2"
+                              class="text-dark news-category-filter">1</span>
+                           </button>
+                           </a>
+                           <a href="#!" data-id="4"
+                              class="categories d-flex align-items-center justify-content-between bg-white rounded-10 mb-2 news-category-filter
+                              ">
+                           <span data-id="4"
+                              class=" fs-16 text-dark fw-5 news-category-filter">
+                           Sports</span>
+                           <button class=" border-0">
+                           <span data-id="4"
+                              class="text-dark news-category-filter">1</span>
+                           </button>
+                           </a>
+                           <a href="#!" data-id="5"
+                              class="categories d-flex align-items-center justify-content-between bg-white rounded-10 mb-2 news-category-filter
+                              ">
+                           <span data-id="5"
+                              class=" fs-16 text-dark fw-5 news-category-filter">
+                           Growth</span>
+                           <button class=" border-0">
+                           <span data-id="5"
+                              class="text-dark news-category-filter">1</span>
+                           </button>
+                           </a>
+                           <a href="#!" data-id="6"
+                              class="categories d-flex align-items-center justify-content-between bg-white rounded-10 mb-2 news-category-filter
+                              ">
+                           <span data-id="6"
+                              class=" fs-16 text-dark fw-5 news-category-filter">
+                           Technology</span>
+                           <button class=" border-0">
+                           <span data-id="6"
+                              class="text-dark news-category-filter">1</span>
+                           </button>
+                           </a>
+                        </div>
+                        <!-- end categories-section -->
+                        <!-- start popular-tags-section -->
+                        <div class="popular-tags bg-light  rounded-10 position-relative ">
+                           <div class="d-flex justify-content-between align-items-center mb-4 pb-lg-1">
+                              <h5 class="fs-20 fw-6 text-dark mb-0">Popular tags</h5>
+                              <div class="rectangle-shape"></div>
+                           </div>
+                           <div class="tags d-flex flex-wrap">
+                              <div class="tag me-2 mb-2">
+                                 <a class="fs-16 text-dark fw-5 news-tags-filter radius-four "
+                                    data-id="6">technology</a>
+                              </div>
+                              <div class="tag me-2 mb-2">
+                                 <a class="fs-16 text-dark fw-5 news-tags-filter radius-four "
+                                    data-id="5">knowledge</a>
+                              </div>
+                              <div class="tag me-2 mb-2">
+                                 <a class="fs-16 text-dark fw-5 news-tags-filter radius-four "
+                                    data-id="4">latest</a>
+                              </div>
+                              <div class="tag me-2 mb-2">
+                                 <a class="fs-16 text-dark fw-5 news-tags-filter radius-four "
+                                    data-id="1">donate</a>
+                              </div>
+                              <div class="tag me-2 mb-2">
+                                 <a class="fs-16 text-dark fw-5 news-tags-filter radius-four "
+                                    data-id="2">help</a>
+                              </div>
+                              <div class="tag me-2 mb-2">
+                                 <a class="fs-16 text-dark fw-5 news-tags-filter radius-four "
+                                    data-id="3">water</a>
+                              </div>
+                           </div>
+                        </div>
+                        <!-- end popular-tags-section -->
+                     </div>
+                     <!-- end news-right-section -->
+                  </div>
+               </div>
+            </div>
+         </div>
+         <!-- end news-section -->
+      </div>
+      
+    <!-- company logo slide start -->
+    {% include "fundapp/company-logo.html" %}
+    <!-- company logo slide end -->
+
+    <!-- start footer-section -->
+    {% include 'fundapp/footer.html' %}
+    <!-- end footer-section -->
+    <!-- js -->
+  {% include 'fundapp/js.html' %}
+   </body>
+</html>

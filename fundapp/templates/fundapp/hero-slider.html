@@ -1,0 +1,199 @@
+{% load static %}
+<section class="hero-section">
+    <div
+      id="carouselExampleIndicators"
+      class="carousel slide"
+      data-bs-ride="carousel"
+    >
+      <div class="carousel-indicators d-flex d-xl-none">
+        <button
+          type="button"
+          data-bs-target="#carouselExampleIndicators"
+          data-bs-slide-to="0"
+          class="active"
+          aria-current="true"
+          aria-label="Slide 1"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#carouselExampleIndicators"
+          data-bs-slide-to="1"
+          aria-label="Slide 2"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#carouselExampleIndicators"
+          data-bs-slide-to="2"
+          aria-label="Slide 3"
+        ></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <div
+            class="inner-bgimg position-relative object-fit-cover"
+            style="
+              background: url('{% static 'fundapp/allImage/annie-spratt-OIuCXxx08yg-unsplash.jpg' %}')
+                no-repeat right;
+            "
+          >
+            <div class="container">
+              <div class="row">
+                <div class="col-lg-5 col-md-7 parallelogram-shape">
+                  <div class="text-white inner-text position-relative">
+                    <p class="fs-18 fw-5">Our Mission : Medicine</p>
+                    <h2 class="fs-1 mb-0 fw-6">
+                      More charity Make More 
+                    </br> better life
+                    </h2>
+                  </div>
+                </div>
+                <div class="col-lg-7 col-md-5 mt-3 mt-md-4">
+                  <div class="video-play-btn m-lg-auto ms-md-auto">
+                    <button
+                    type="button"
+                    class="play-video popup-video fs-4 border-0"
+                    data-bs-toggle="modal"
+                    data-bs-target="#exampleModal4"
+                    data-src="https://www.youtube.com/embed/QvkDDA62-tw"
+                    >
+                      <i class="fas fa-play text-primary"></i>
+                    </button>
+                  </div>
+                </div>
+              </div>
+
+
+
+              
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div
+            class="inner-bgimg position-relative object-fit-cover"
+            style="
+              background: url('{% static 'fundapp/allImage/annie-spratt-OIuCXxx08yg-unsplash.jpg' %}')
+                no-repeat right;
+            "
+          >
+            <div class="container">
+              <div class="row">
+                <div class="col-lg-5 col-md-7 parallelogram-shape">
+                  <div class="text-white inner-text position-relative">
+                    <p class="fs-18 fw-5">Our Mission : Education</p>
+                    <h2 class="fs-1 mb-0 fw-6">
+                      We are On A Mission To Change That
+                    </h2>
+                  </div>
+                </div>
+                <div class="col-lg-7 col-md-5 mt-3 mt-md-4">
+                  <div class="video-play-btn m-lg-auto ms-md-auto">
+                    <button
+                    type="button"
+                    class="play-video popup-video fs-4 border-0"
+                    data-bs-toggle="modal"
+                    data-bs-target="#exampleModal4"
+                      data-src="https://www.youtube.com/embed/QvkDDA62-tw"
+                    >
+                      <i class="fas fa-play text-primary"></i>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div
+            class="inner-bgimg position-relative object-fit-cover"
+            style="
+              background: url('{% static 'fundapp/allImage/annie-spratt-OIuCXxx08yg-unsplash.jpg' %}')
+                no-repeat right;
+            "
+          >
+            <div class="container">
+              <div class="row">
+                <div class="col-lg-5 col-md-7 parallelogram-shape">
+                  <div class="text-white inner-text position-relative">
+                    <p class="fs-18 fw-5">Our Mission : Food</p>
+                    <h2 class="fs-1 mb-0 fw-6">
+                      We are On A Mission To Provide Food
+                    </h2>
+                  </div>
+                </div>
+                <div class="col-lg-7 col-md-5 mt-3 mt-md-4">
+                  <div class="video-play-btn m-lg-auto ms-md-auto">
+                    <button
+                    type="button"
+                    class="play-video popup-video fs-4 border-0"
+                    data-bs-toggle="modal"
+                    data-bs-target="#exampleModal4"
+                      data-src="https://www.youtube.com/embed/QvkDDA62-tw"
+                    >
+                      <i class="fas fa-play text-primary"></i>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Modal -->
+        <div class="modal fade"
+          id="homePageVideoModal"
+          tabindex="-1"
+          aria-labelledby="exampleModalLabel"
+          aria-hidden="true"
+        >
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <button
+                  type="button"
+                  class="btn-close text-white"
+                  data-bs-dismiss="modal"
+                  aria-label="Close"
+                ></button>
+              </div>
+              <div class="modal-body w-100">
+                <iframe
+                  src="#"
+                  class="w-100 h-100 home-page-video"
+                  title="YouTube video player"
+                  frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowfullscreen
+                ></iframe>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="d-none d-xl-block">
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#carouselExampleIndicators"
+          data-bs-slide="prev"
+        >
+          <span
+            class="carousel-control-prev-icon"
+            aria-hidden="true"
+          ></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#carouselExampleIndicators"
+          data-bs-slide="next"
+        >
+          <span
+            class="carousel-control-next-icon"
+            aria-hidden="true"
+          ></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </div>
+</section>

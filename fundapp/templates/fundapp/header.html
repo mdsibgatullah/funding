@@ -1,0 +1,165 @@
+ {% load static %}
+ <!-- start header section -->
+ <header>
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-lg-1 col-4">
+          <div class="header-logo">
+            <a href="index.html">
+              <img src="{% static 'fundapp/allImage/logo.png' %}" alt="Jobs" class="w-100 h-100" />
+            </a>
+          </div>
+        </div>
+        <div class="col-lg-11 col-8">
+          <nav
+            class="navbar navbar-expand-lg navbar-dark justify-content-end py-0"
+          >
+            <button
+              class="navbar-toggler border-0 p-0"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarNav"
+              aria-controls="navbarNav"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            ></button>
+            <div
+              class="collapse navbar-collapse justify-content-end"
+              id="navbarNav"
+            >
+              <ul class="navbar-nav align-items-center py-2 py-lg-0">
+                <li class="nav-item">
+                  <a
+                    class="nav-link active fw-5 fs-14"
+                    aria-current="page"
+                    href="{% url 'index' %}"
+                    >Home</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link fw-5 fs-14" href="{% url 'about-us' %}"
+                    >About</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link fw-5 fs-14" href="causes.html">Causes</a>
+                </li>
+                <li class="nav-item">
+                  <a href="#" class="nav-link fw-5 fs-14">Pages</a>
+                  <ul class="dropdown-nav ps-0">
+                    <li><a href="{% url 'faqs' %}" class="fs-14 fw-5">FAQs</a></li>
+                    <li>
+                      <a href="events.html" class="fs-14 fw-5">Events</a>
+                    </li>
+                    
+                    <li><a href="{% url 'teams' %}" class="fs-14 fw-5">Team</a></li>
+                  </ul>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link fw-5 fs-14" href="{% url 'news' %}">News</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link fw-5 fs-14" href="{% url 'countact-us' %}"
+                    >Contact Us</a
+                  >
+                </li>
+              </ul>
+              <div class="text-lg-end header-btn-grp ms-lg-2">
+                <a
+                  href="{% url 'register' %}"
+                  type="button"
+                  class="btn btn-secondary me-3 mb-3 mb-lg-0"
+                >
+                  Sign Up</a
+                >
+                <a href="{% url 'login' %}" class="btn btn-primary mb-3 mb-lg-0"
+                  >Sign In</a
+                >
+              </div>
+            </div>
+          </nav>
+          <!--start mobile-menu -->
+          <div class="offcanvas-toggle d-lg-none d-block text-end">
+            <a
+              href="#"
+              data-bs-toggle="offcanvas"
+              data-bs-target="#offcanvasRight"
+              aria-controls="offcanvasRight"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </a>
+            <div
+              class="offcanvas offcanvas-end text-start"
+              tabindex="-1"
+              id="offcanvasRight"
+              aria-labelledby="offcanvasRightLabel"
+            >
+              <button
+                type="button"
+                class="btn-close text-reset mb-3"
+                data-bs-dismiss="offcanvas"
+                aria-label="Close"
+              ></button>
+              <div class="offcanvas-body p-0">
+                <div class="nav-item">
+                  <a
+                    class="nav-link fw-5 fs-14 active"
+                    aria-current="page"
+                    href="index.html"
+                    >Home</a
+                  >
+                </div>
+                <div class="nav-item">
+                  <a class="nav-link fw-5 fs-14" href="about-us.html"
+                    >About</a
+                  >
+                </div>
+                <div class="nav-item">
+                  <a class="nav-link fw-5 fs-14" href="causes.html">Causes</a>
+                </div>
+                <div class="set">
+                  <a class="nav-link fw-5 fs-14" href="#">Pages</a>
+                  <a href="#" class="p-0"><i class="fa fa-plus"></i></a>
+                  <div class="content">
+                    <li><a href="faqs.html" class="fs-14 fw-5">FAQs</a></li>
+                    <li>
+                      <a href="events.html" class="fs-14 fw-5">Events</a>
+                    </li>
+                    
+                    <li>
+                      <a href="page/20.html" class="">Save</a>
+                    </li>
+                  </div>
+                </div>
+
+                <div class="nav-item">
+                  <a class="nav-link fw-5 fs-14" href="news.html">News</a>
+                </div>
+                <div class="nav-item">
+                  <a class="nav-link fw-5 fs-14" href="teams.html">Team</a>
+                </div>
+                <div class="nav-item">
+                  <a class="nav-link fw-5 fs-14" href="contact-us.html"
+                    >Contact</a
+                  >
+                </div>
+                <div class="text-lg-end header-btn-grp mt-4">
+                  <a
+                    href="register.html"
+                    type="button"
+                    class="btn btn-secondary me-xxl-3 me-3 mb-3 mb-lg-0"
+                  >
+                    Sign Up</a
+                  >
+                  <a href="login.html" class="btn btn-primary mb-3 mb-lg-0"
+                    >Sign In</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+          <!--end mobile-menu -->
+        </div>
+      </div>
+    </div>
+</header>

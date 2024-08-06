@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+  <head>
+    {% include "fundapp/css.html" %}
+  </head>
+
+  <body class="body-wrapper">
+    <!-- start header section -->
+     {% include "fundapp/header.html" %}
+
+    <div class="about-page">
+      <!-- start hero-section -->
+      <section class="hero-section">
+        <div
+          class="inner-bgimg position-relative"
+          style="
+            background: url('{% static 'fundapp/allImage/annie-spratt-OIuCXxx08yg-unsplash.jpg' %}');
+          "
+        >
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-6 col-md-7 parallelogram-shape">
+                <div class="text-white inner-text position-relative">
+                  <p class="fs-18 fw-5 mb-md-3 pb-lg-2 mb-2">
+                    Our Mission : Food, Education, Medicine
+                  </p>
+                  <h2 class="fs-1 mb-md-0 fw-6">About Us</h2>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- end hero-section -->
+
+      <!-- start about-section -->
+      <section class="about-section pt-100 pb-100">
+        <div class="container">
+          <div class="row">
+            <div class="col-xxl-6 col-xl-7 col-lg-8">
+              <div class="about-left">
+                <div class="row">
+                  <div class="col-md-6">
+                    <div class="about-1">
+                      <img
+                        src="{% static 'fundapp/allImage/josh-appel-NeTPASr-bmQ-unsplash.jpg' %}"
+                        class="w-100 h-100 object-fit-cover"
+                      />
+                    </div>
+                    <div class="about-content-box bg-primary">
+                      <div
+                        class="about-content d-flex flex-column align-items-center justify-content-center"
+                      >
+                        <h2
+                          class="number-big text-white fs-1 fw-6 counter"
+                          data-countto="25"
+                          data-duration="3000"
+                        ></h2>
+                        <p class="mb-0 text-white fs-14 fw-5">
+                          Years Of Experience
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-6 d-md-flex align-items-center">
+                    <div class="about-2">
+                      <img
+                        src="{% static 'fundapp/allImage/fundaboutus.jpg' %}"
+                        class="w-100 h-100 object-fit-cover"
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-xxl-6 col-xl-5 col-lg-4 mt-lg-0 mt-sm-5 mt-4">
+              <div class="about-right">
+                <p class="text-primary fs-16 fw-6 mb-3 pb-1">About Us</p>
+                <h2 class="text-dark fw-6 mb-3 pb-1">
+                  We Have Funded 44k Dollars Over
+                </h2>
+                <p class="text-dark fs-16 fw-5 mb-4 pb-lg-3">
+                  We have plenty of water of drink even..
+                </p>
+                <ul>
+                  <li class="text-dark fs-16 fw-5 mb-2">A place in history.</li>
+                  <li class="text-dark fs-16 fw-5 mb-2">
+                    Its about impact, goodness.
+                  </li>
+                  <li class="text-dark fs-16 fw-5 mb-2">
+                    More goodness in the world.
+                  </li>
+                  <li class="text-dark fs-16 fw-5 mb-2">
+                    The world we live in right now can be hard.
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- end about-section -->
+
+      <!-- start success-stories-section -->
+      <section class="success-stories-section pb-100">
+        <div class="container">
+          <div class="row justify-content-center">
+            <div class="col-lg-8 col-sm-11 col-11">
+              <div
+                class="section-title section-title-four b-top text-center head-title"
+              >
+                <h1 class="text-dark fw-6 mb-5">Success Stories</h1>
+              </div>
+            </div>
+          </div>
+          <div
+            class="success-stories-content bg-gray px-sm-5 py-sm-5 px-4 py-4"
+          >
+            <div class="row d-flex align-items-center pb-3 pt-3 border-bottom">
+              <div class="col-xxl-8 col-lg-7 pe-xxl-4 pe-lg-2">
+                <div class="stories-content">
+                  <h3 class="text-primary fw-6 mb-3 pb-1">Quarantine Center</h3>
+                  <p class="text-dark fs-16 fw-5 mb-lg-0 mb-sm-5 mb-4">
+                    A 24-year-old who loves to bake and hopes to have her own
+                    bakery in the future, Chhavi Trivedi completed her B.A.LLB
+                    hons this year. Currently working with an e-commerce startup
+                    as a legal advisor, she has always been inclined towards
+                    spirituality and has also been an ‘Art Of Living’ volunteer.
+                    After hearing about the relapse of her mother’s breast
+                    cancer in July, she was dumbfounded. “The doctors
+                  </p>
+                </div>
+              </div>
+              <div class="col-xxl-4 col-lg-5">
+                <div class="stories-img">
+                  <img
+                    src="{% static 'fundapp/allImage/about1.jpeg' %}"
+                    alt="Quarantine Center"
+                    class="w-100 h-100 rounded-10 object-fit-cover"
+                  />
+                </div>
+              </div>
+            </div>
+            <div class="row d-flex align-items-center pb-3 pt-3 border-bottom">
+              <div class="col-xxl-8 col-lg-7 pe-xxl-4 pe-lg-2">
+                <div class="stories-content">
+                  <h3 class="text-primary fw-6 mb-3 pb-1">Food Supply</h3>
+                  <p class="text-dark fs-16 fw-5 mb-lg-0 mb-sm-5 mb-4">
+                    In ‘Art Of Living’ volunteer. After hearing about the
+                    relapse of her mother’s breast cancer in July, she was
+                    dumbfounded. “The doctors said there was hope because there
+                    was a medicine that could help me - but it will cost us
+                    80k/month
+                  </p>
+                </div>
+              </div>
+              <div class="col-xxl-4 col-lg-5">
+                <div class="stories-img">
+                  <img
+                    src="{% static 'fundapp/allImage/about1.jpeg' %}"
+                    alt="Food Supply"
+                    class="w-100 h-100 rounded-10 object-fit-cover"
+                  />
+                </div>
+              </div>
+            </div>
+            <div class="row d-flex align-items-center pb-3 pt-3 border-bottom">
+              <div class="col-xxl-8 col-lg-7 pe-xxl-4 pe-lg-2">
+                <div class="stories-content">
+                  <h3 class="text-primary fw-6 mb-3 pb-1">Cancer Battle</h3>
+                  <p class="text-dark fs-16 fw-5 mb-lg-0 mb-sm-5 mb-4">
+                    A 24-year-old who loves to bake and hopes to have her own
+                    bakery in the future, Chhavi Trivedi completed her B.A.LLB
+                    hons this year. Currently working with an e-commerce startup
+                    as a legal advisor, she has always been inclined towards
+                    spirituality and has also been an ‘Art Of Living’ volunteer.
+                    After hearing about the relapse of her mother’s breast
+                    cancer in July, she was dumbfounded. “The doctors
+                  </p>
+                </div>
+              </div>
+              <div class="col-xxl-4 col-lg-5">
+                <div class="stories-img">
+                  <img
+                    src="{% static 'fundapp/allImage/about1.jpeg' %}"
+                    alt="Cancer Battle"
+                    class="w-100 h-100 rounded-10 object-fit-cover"
+                  />
+                </div>
+              </div>
+            </div>
+            <div class="row d-flex align-items-center pb-3 pt-3 border-bottom">
+              <div class="col-xxl-8 col-lg-7 pe-xxl-4 pe-lg-2">
+                <div class="stories-content">
+                  <h3 class="text-primary fw-6 mb-3 pb-1">Education</h3>
+                  <p class="text-dark fs-16 fw-5 mb-lg-0 mb-sm-5 mb-4">
+                    "I've raised over Rs.24 L for children to fight eye cancer
+                    in 2014 on InfyFunding. When I met these underprivileged
+                    girls, it gave me great satisfaction of having made a
+                    difference to their lives. So this year I decided to pick
+                    another cause and make a difference. I decided to go ahead
+                    with girl child education. It's a pressing issue and has the
+                    potential of getting support too.", says the cycling
+                  </p>
+                </div>
+              </div>
+              <div class="col-xxl-4 col-lg-5">
+                <div class="stories-img">
+                  <img
+                    src="{% static 'fundapp/allImage/about1.jpeg' %}"
+                    alt="Education"
+                    class="w-100 h-100 rounded-10 object-fit-cover"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- end success-stories-section -->
+    </div>
+
+    <!-- company logo slide start -->
+    {% include "fundapp/company-logo.html" %}
+    <!-- company logo slide end -->
+
+    <!-- start footer-section -->
+    {% include 'fundapp/footer.html' %}
+    <!-- end footer-section -->
+
+    <!-- js -->
+    {% include 'fundapp/js.html' %}
+  </body>
+</html>

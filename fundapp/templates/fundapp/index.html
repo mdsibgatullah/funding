@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+  <head>
+    {% include "fundapp/css.html" %}
+    <title>Home | page</title>
+  </head>
+
+  <body class="body-wrapper">
+    <!-- start header section -->
+     {% include "fundapp/header.html" %}
+
+    <div class="home-page">
+      <!-- start hero-section- slider -->
+      {% include "fundapp/hero-slider.html" %}
+      <!-- end hero-section -->
+
+      <!-- start category-section -->
+     {% include "fundapp/category.html" %}
+      <!-- end category-section -->
+
+      <!-- start trending-causes-section -->
+     {% include "fundapp/header.html" %}
+      <!-- end trending-causes-section -->
+
+      <!-- start about-section -->
+      {% include "fundapp/about-section.html" %}
+      <!-- end about-section -->
+
+      <!-- start count-section -->
+       {% include "fundapp/count.html" %}
+      <!-- end count-section -->
+
+      <!-- start video-section -->
+     {% include "fundapp/video.html" %}
+      <!-- end video-section -->
+
+      <!-- start why-choose-section -->
+     {% include "fundapp/why-choose.html" %}
+      <!-- end why-chooses-section -->
+
+      <!-- start news-feeds-section -->
+       {% include "fundapp/news-feeds.html" %}
+      <!-- end news-feeds-section -->
+
+      <!-- start our-team-section -->
+       {% include "fundapp/our-team.html" %}
+      <!-- end our-team-section -->
+    </div>
+
+    <!-- company logo slide start -->
+    {% include "fundapp/company-logo.html" %}
+    <!-- company logo slide end -->
+
+    <!-- start footer-section -->
+    {% include 'fundapp/footer.html' %}
+    <!-- end footer-section -->
+    <!-- js -->
+  {% include 'fundapp/js.html' %}
+</body>
+</html>
+     

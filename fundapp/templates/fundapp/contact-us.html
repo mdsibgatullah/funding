@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+  <head>
+    
+    {% include "fundapp/css.html" %}
+    
+  </head>
+
+
+  <body class="body-wrapper">
+    <!-- start header section -->
+     {% include "fundapp/header.html" %}
+
+    <div class="Contact-page">
+      <!-- start hero-section -->
+      <section class="hero-section">
+        <div
+          class="inner-bgimg position-relative"
+          style="
+            background: url('{% static 'fundapp/allImage/team-hero-img.png'%}');
+          "
+        >
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-6 col-md-7 parallelogram-shape">
+                <div class="text-white inner-text position-relative">
+                  <p class="fs-18 fw-5 mb-md-3 pb-lg-2 mb-2">
+                    Our Mission : Food, Education
+                  </p>
+                  <h2 class="fs-1 mb-md-0 fw-6">Contact Us</h2>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- end hero-section -->
+
+      <!-- start contact-section -->
+      <section class="contact-section pt-100 pb-100">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-4 col-md-6 mb-lg-0 mb-sm-5 mb-4">
+              <div
+                class="d-flex align-items-center bg-light rounded-10 p-30 h-100"
+              >
+                <div class="icon me-4 ps-xl-3">
+                  <i class="fa-solid fa-envelope text-primary"></i>
+                </div>
+                <div class="desc ms-xl-3 pe-xl-3">
+                  <h4 class="fs-20 fw-6 text-primary">Email Address</h4>
+                  <a
+                    href="mailto:metrnonics@gmail.com"
+                    class="text-gray fs-16 fw-5"
+                  >
+                    <span class="text-dark">admin@gmail.com</span>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-6 mb-lg-0 mb-sm-5 mb-4">
+              <div
+                class="d-flex align-items-center bg-light rounded-10 p-30 h-100"
+              >
+                <div class="icon me-4 ps-xl-3">
+                  <i class="fa-solid fa-phone text-primary"></i>
+                </div>
+                <div class="desc ms-xl-3 pe-xl-3">
+                  <h4 class="fs-20 fw-6 text-primary">Phone Number</h4>
+                  <a href="tel:+9876543210" class="text-dark fs-16 fw-5"
+                    >9876543210</a
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+              <div
+                class="d-flex align-items-center bg-light rounded-10 p-30 h-100"
+              >
+                <div class="icon me-4 ps-xl-3">
+                  <i class="fa-solid fa-location-dot text-primary"></i>
+                </div>
+                <div class="desc ms-xl-3 pe-xl-3">
+                  <h4 class="fs-20 fw-6 text-primary">Office Address</h4>
+                  <a href="#!" class="text-dark fs-16 fw-5"
+                    >Jashore , Bangladesh</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="contact-form pt-60 pb-60">
+            <div class="text-center text-dark pb-20">
+              <h1>Get In Touch</h1>
+            </div>
+            <div class="row">
+              <div class="col-lg-4 mb-lg-0 mb-5">
+                <div id="map" class="map">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d29346.0579094468!2d89.2146144!3d23.1608097!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sbd!4v1720296255121!5m2!1sen!2sbd" 
+                    class="w-100 h-100 object-fit-cover rounded-10 border-0"
+                    allowfullscreen=""
+                    loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"
+                  ></iframe>
+                </div>
+              </div>
+              <div class="col-lg-8">
+                <form id="getInTouchForm" class="row conact-form" method="post">
+                  <input
+                    type="hidden"
+                    name="_token"
+                    value="PLti7y69EP3t2BQKCOJgDuPXNRGd8yLpp1DBOtab"
+                  />
+                  <div class="row">
+                    <div class="col-lg-6 mb-3 pb-1">
+                      <input
+                        type="text"
+                        id="name"
+                        name="name"
+                        class="form-control fs-14 text-dark"
+                        placeholder="Enter first name *"
+                        required
+                      />
+                    </div>
+                    <div class="col-lg-6 mb-3 pb-1">
+                      <input
+                        type="text"
+                        id="email"
+                        name="email"
+                        class="form-control fs-14 text-dark"
+                        placeholder="Enter email address *"
+                        required
+                      />
+                    </div>
+                    <div class="col-lg-6 mb-3 pb-1">
+                      <input
+                        type="tel"
+                        id="phone"
+                        class="form-control fs-14 text-dark"
+                        name="phone"
+                        onkeyup='if (/\D/g.test(this.value)) this.value = this.value.replace(/\D/g,"")'
+                        placeholder="Enter phone number *"
+                        required
+                      />
+                    </div>
+                    <div class="col-lg-6 mb-3 pb-1">
+                      <input
+                        type="text"
+                        id="subject"
+                        name="subject"
+                        class="form-control fs-14 text-dark"
+                        placeholder="Enter subject *"
+                        required
+                      />
+                    </div>
+                    <div class="col-12 mb-4 pb-2">
+                      <textarea
+                        class="form-control fs-14 text-dark"
+                        id="message"
+                        name="message"
+                        rows="4"
+                        placeholder="Enter message *"
+                        required
+                      ></textarea>
+                    </div>
+                    <div class="col-12">
+                      <button
+                        type="submit"
+                        class="btn btn-primary me-3"
+                        id="getInTouchSaveBtn"
+                      >
+                        Get a Quote
+                      </button>
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- end contact-section -->
+    </div>
+
+    
+    <!-- company logo slide start -->
+    {% include "fundapp/company-logo.html" %}
+    <!-- company logo slide end -->
+
+    <!-- start footer-section -->
+    {% include 'fundapp/footer.html' %}
+    <!-- end footer-section -->
+    <!-- js -->
+    {% include 'fundapp/js.html' %}
+    </body>
+  </html>
+  

@@ -1,0 +1,25 @@
+{% comment %} <!DOCTYPE html>
+{% load static %}
+<html lang="en">
+    <head>
+
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+        {% block title %}
+            <title>Home | page</title>
+        {% endblock title %}
+
+        {% block css %}
+            {% include "templates/fundapp/css.html" %}
+        {% endblock css %}
+    </head>
+    <body>
+        {% block content %}
+        {% endblock content %}
+        
+        {% block js %}
+        {% endblock js %}
+    </body>
+</html> {% endcomment %}
